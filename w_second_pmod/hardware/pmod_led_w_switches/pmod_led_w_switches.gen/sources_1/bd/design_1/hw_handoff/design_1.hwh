@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu May 12 16:51:20 2022" VIVADOVERSION="2021.2">
+
+  <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-10:part0:1.0" DEVICE="7z010" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="sw" SIGIS="data" SIGNAME="External_Ports_sw">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pmod_led_0" PORT="sw"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="pmod_led" SIGIS="data" SIGNAME="pmod_led_0_led">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="pmod_led_0" PORT="led"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2105121638" FULLNAME="/pmod_led_0" HWVERSION="1.0" INSTANCE="pmod_led_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="pmod_led" VLNV="xilinx.com:hls:pmod_led:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_pmod_led_0_0"/>
+        <PARAMETER NAME="clk_period" VALUE="10"/>
+        <PARAMETER NAME="machine" VALUE="64"/>
+        <PARAMETER NAME="combinational" VALUE="1"/>
+        <PARAMETER NAME="latency" VALUE="0"/>
+        <PARAMETER NAME="II" VALUE="x"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="ap_local_block" SIGIS="undef"/>
+        <PORT DIR="O" NAME="ap_local_deadlock" SIGIS="undef"/>
+        <PORT DIR="I" NAME="sw" SIGIS="data" SIGNAME="External_Ports_sw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sw"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="led" SIGIS="data" SIGNAME="pmod_led_0_led">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="pmod_led"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

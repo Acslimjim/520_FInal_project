@@ -1,0 +1,87 @@
+
+
+================================================================
+== Synthesis Summary Report of 'pmod_led'
+================================================================
++ General Information: 
+    * Date:           Wed May 12 16:37:25 2021
+    * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+    * Project:        pmod_led-vitishls
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z010-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+----+-----+
+    |   Modules  | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |   |    |     |
+    |   & Loops  | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP| FF| LUT| URAM|
+    +------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+----+-----+
+    |+ pmod_led  |     -|  7.30|        0|   0.000|         -|        1|     -|        no|     -|   -|  -|   -|    -|
+    +------------+------+------+---------+--------+----------+---------+------+----------+------+----+---+----+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* REGISTER
++-----------+---------+----------+
+| Interface | Mode    | Bitwidth |
++-----------+---------+----------+
+| led       | ap_none | 1        |
+| sw        | ap_none | 1        |
++-----------+---------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| sw       | in        | bool     |
+| led      | out       | bool&    |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+
+| Argument | HW Interface | HW Type |
++----------+--------------+---------+
+| sw       | sw           | port    |
+| led      | led          | port    |
++----------+--------------+---------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
+  No bind op info in design
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== User Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+--------------------------+------------------------------------+
+| Type      | Options                  | Location                           |
++-----------+--------------------------+------------------------------------+
+| interface | ap_none port=led         | pmod_led.cpp:2 in pmod_led, led    |
+| interface | ap_none port=sw          | pmod_led.cpp:3 in pmod_led, sw     |
+| interface | ap_ctrl_none port=return | pmod_led.cpp:4 in pmod_led, return |
++-----------+--------------------------+------------------------------------+
+
+

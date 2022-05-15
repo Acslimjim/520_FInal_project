@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:D:/Xilinx/Projects/520/final_proj/w_second_pmod/hardware/pmod_led_w_switches/pmod_led_w_switches.srcs/constrs_1/new/pmod_led.xdc rfile:../../../pmod_led_w_switches.srcs/constrs_1/new/pmod_led.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:126 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN V15   IOSTANDARD LVCMOS33     } [get_ports {pmod_led}]; #IO_L10P_T1_34 Sch=jc_p[1]
+set_property src_info {type:XDC file:1 line:148 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN V12   IOSTANDARD LVCMOS33 } [get_ports {sw}]; #IO_L4P_T0_34 Sch=je[1]

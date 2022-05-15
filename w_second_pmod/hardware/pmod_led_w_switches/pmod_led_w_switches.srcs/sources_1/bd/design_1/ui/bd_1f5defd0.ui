@@ -1,0 +1,17 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.75",
+   "Default View_TopLeft":"-216,-145",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_sw -pg 1 -lvl 0 -x -10 -y -20 -defaultsOSRD
+preplace port port-id_pmod_led -pg 1 -lvl 2 -x 310 -y 0 -defaultsOSRD
+preplace inst pmod_led_0 -pg 1 -lvl 1 -x 150 -y -20 -defaultsOSRD
+preplace netloc sw_0_1 1 0 1 N -20
+preplace netloc pmod_led_0_led 1 1 1 N 0
+levelinfo -pg 1 -10 150 310
+pagesize -pg 1 -db -bbox -sgen -80 -100 430 160
+"
+}
+

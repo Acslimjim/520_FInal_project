@@ -1,0 +1,5 @@
+<pragmas>
+<pragma file="pmod_led.cpp" line="1" pragmaType="interface" parentfunction="pmod_led" mode="ap_none" port="led" name="" register="0"/>
+<pragma file="pmod_led.cpp" line="2" pragmaType="interface" parentfunction="pmod_led" mode="ap_none" port="sw" name="" register="0"/>
+<pragma file="pmod_led.cpp" line="3" pragmaType="interface" parentfunction="pmod_led" mode="ap_ctrl_none" port="return" name=""/>
+</pragmas>
